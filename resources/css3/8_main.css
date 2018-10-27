@@ -1,0 +1,36 @@
+div{
+	font:bold 40px Tahoma;	
+	text-align:center;
+	margin:50px;
+}
+#box{
+	border:1px solid green;
+	width:250px;
+	height:150px;
+	line-height:150px;	
+	border-radius:10px;
+	/*box-shadow:rgba(255,0,0,0.7) 10px 10px 10px;*/
+	/*box-shadow:rgba(255,0,0,0.5) 10px 10px,blue 10px 10px;*/
+	box-shadow:red 10px -10px,blue 20px 20px;
+	text-shadow:red 5px 5px 5px;
+}
+#box2{
+	background:#ccc;
+	width:250px;
+	box-shadow: red 20px 0px inset;
+}
+#box3{
+	border:1px solid green;
+	width:250px;
+}
+#box3 p:nth-child(1){
+	text-shadow: red 0px 0px 5px;
+	color:#fff;
+}
+#box3 p:nth-child(2){
+	text-shadow: red 0px 0px 5px,blue 0px 0px 5px;
+	color:#fff;
+}
+#box3 p:nth-child(3){
+	text-shadow: red -10px -10px,blue -10px 10px;
+}

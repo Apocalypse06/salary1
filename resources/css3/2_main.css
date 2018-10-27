@@ -1,0 +1,38 @@
+#box{
+	font:bold 30px Tahoma;
+	border:1px solid red;
+}
+#box p:hover:not(.temp){		/*子孫選擇器*/
+	color:steelblue;
+}
+p:nth-child(even){
+	background:red;
+}
+/*
+*{
+	margin:0px;
+	padding:0px;
+}
+*/
+p[name="silvia"]{
+	background:#ccc;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"],button{
+	width:100px;
+	text-transform:capitalize;
+	text-decoration:underline;
+}
+/*a[href*="google.com"]{background:#888;}*/
+/*a[href^="https://"]{background:#888;}*/
+a[href$=".pdf"]{background:#888;}
+
+
+
+
+
+
+
+
+
+

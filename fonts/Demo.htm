@@ -1,0 +1,776 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+
+        
+    <link rel="stylesheet" href="/ECERP/Contents/optimized/common.css?v=709694571638342818-19" />
+    <link rel="stylesheet" href="/ECERP/Contents/optimized/navigation.css?v=4526434156874975681-19" />
+    <link rel="stylesheet" href="/ECERP/Contents/optimized/font-awesome.css?v=-5187848951683904866-19" />
+
+
+    
+
+        <link rel="stylesheet" href="/ECERP/Contents/optimized/common-responsive.css?v=-6717614715257809194-19" />
+
+    
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/02119A29-BCC2-6347-89F9-AF392F33E65B/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/B56E33F293FA-9F98-7436-2CCB-92A91120/abn/main.css"/><style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+
+
+        <link rel="stylesheet" href="/ECERP/Contents/optimized/common-theme-lightred.css?v=359785825622853971-19" />
+
+        <link rel="stylesheet" href="/ECERP/Contents/optimized/common-font-size-lg.css?v=359785825622853971-19" />
+
+    <style>
+        .font-user-setting {
+            font-family: 'microsoft yahei','Dotum','Gulim','Arial','Apple SD Gothic Neo','Gulim';
+        }
+    </style>
+</head>
+
+
+<body class=" font-user-setting zoom-90 responsive-web" id="body_html">
+
+    
+
+<div id="responsive-applied"></div>
+    <div class="dropdown-menu wrapper-qm-myinfo" id="divUserLayer">
+        <!--<div class="myinfo-off-work">
+            <a class="text-light" href="javascript:;" id="userLayerLogout">登出</a><span class="inline-divider"></span><a class="text-light" href="javascript:;" id="ecountchecklayer">下班/登出</a>
+        </div> -->
+        <div class="qm-myinfo-header">
+            <div class="myinfo-header-overlay">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <filter id="ie-blur">
+                        <feGaussianBlur stdDeviation="15"></feGaussianBlur>
+                    </filter>
+                    <image id="overlayUserImage" width="100%" height="100%" filter="url('#ie-blur')" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="">
+                    </image>
+                </svg>
+            </div>
+            <div id="userLayerUserImage" class="myinfo-photo" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="上傳大頭貼">
+                <img id="avatarImageUser" src="/ECErp/Contents/images/icon/personal-image.png">
+            </div>
+            <div class="myinfo-profile">
+                <div class="myinfo-id">GUEST</div>
+                <a href="javascript:;" data-setup="更改密碼" data-url="/ECERP/ESC/ESC003P_06" data-width="450" data-height="250" class="myinfo-contact text-light" id="myinfo-name-change"></a>
+                <span class="myinfo-name" id="userUnameInpartname">林至伶</span><br>
+                <a href="javascript:;" data-setup="更改密碼" data-url="/ECERP/ESC/ESC003P_02" data-width="450" data-height="330" class="myinfo-contact text-light" id="myinfo-tel-change"></a><br>
+                <a href="javascript:;" data-setup="更改密碼" data-url="/ECERP/ESC/ESC003P_01" data-width="450" data-height="280" class="myinfo-pw-change text-light">更改密碼</a><br><!--비밀번호변경-->
+                <div class="myinfo-ip">
+                    登入IP : <a href="javascript:;" id="userLayerIpAddress" class="text-light" data-setup="連接管理" data-url="/ECERP/EMM/EMM005P_03" data-type="B" data-width="450" data-height="100"></a>
+                </div>
+            </div>
+            <div class="myinfo-message">
+                <div class="overlay">
+                    <button class="btn btn-primary btn-sm" id="setupStatusmessage">設定</button>
+                </div>
+                <div class="status-message-id">
+沒有狀態字條。                </div>
+            </div>
+        </div>
+
+        <div class="qm-myinfo-contents">
+            <ul class="multiple-logins" style="display:none" id="userLayerMultiLogin"></ul>
+            <div class="multiple-logins-toggle collapsed" style="display:none" id="userLayerBtnMultiLogin"></div>
+
+            <div class="wrapper-function-setup">
+                <table class="table table-hover table-th-left table-layout-auto table-border-no-a table-function-setup">
+                    <colgroup>
+                        <col class="table-function-setup-col1">
+                        <col class="table-function-setup-col2">
+                        <col class="table-function-setup-col3">
+                    </colgroup>
+                    <tbody>
+
+                        <tr>
+                            <th>共同設定</th><!--도장/서명-->
+                            <td><a href="javascript:;" data-url="/ECMAIN/EMW/EMW002M.ASPX?limit_page=N" data-width="880" data-height="850">我的頁面</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--언어-->
+                            <td><a href="javascript:;" data-setup="設定語言" data-url="/ECERP/ESC/ESC003P_03" data-type="L" data-width="450" data-height="400">語言</a></td>
+                            <td id="userLayerLanguageDes"></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--즐겨찾기-->
+                            <td><a href="javascript:;" data-setup="設定收藏" data-url="/ECERP/ESC/ESC003P_03" data-type="B" data-width="450" data-height="200">我的最愛</a></td>
+                            <td id="userLayerFavorite"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-hover table-th-left table-layout-auto table-border-no-a table-function-setup">
+                    <colgroup>
+                        <col class="table-function-setup-col1">
+                        <col class="table-function-setup-col2">
+                        <col class="table-function-setup-col3">
+                    </colgroup>
+                    <tbody>
+                        
+                        <tr>
+                            <th>畫面設定</th><!--화면너비-->
+                            <td><a href="javascript:;" data-url="/ECMAIN/EMD/EMD001P_01.ASPX" data-width="750" data-height="500">畫面寬度</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--화면테마-->
+                            <td><a href="javascript:;" data-setup="畫面設定" data-url="/ECERP/ESC/ESC003P_03" data-width="450" data-height="500">介面主題風格</a></td>
+                            <td id="userLayerUiTheme"></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--전표입력방식-->
+                            <td><a href="javascript:;" data-setup="畫面設定" data-url="/ECERP/ESC/ESC003P_03" data-width="450" data-height="500">單據/憑證 輸入方式</a></td>
+                            <td id="userLayeSlipInputType"></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--메뉴타입-->
+                            <td><a href="javascript:;" data-setup="畫面設定" data-url="/ECERP/ESC/ESC003P_03" data-width="450" data-height="500">選單類型</a></td>
+                            <td id="userLayerUiMenuType"></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--화면확대-->
+                            <td><a href="javascript:;" data-setup="畫面設定" data-url="/ECERP/ESC/ESC003P_03" data-width="450" data-height="500">頁面縮放</a></td>
+                            <td id="userLayerUiZoom"></td>
+                        </tr>
+                        <tr>
+                            <th></th><!--반응형웹-->
+                            <td><a href="javascript:;" data-setup="響應式網頁" data-url="/ECERP/ESC/ESC003P_04" data-width="550" data-height="320">響應式網頁</a></td>
+                            <td id="userLayerResponsive"></td>
+                        </tr>
+
+                        <tr id="trMessenger">
+                            <th></th><!--쪽지-->
+                            <td><a href="javascript:;" data-setup="訊息" data-url="/ECERP/ESC/ESC003P_34" data-width="750" data-height="500">訊息</a></td>
+                            <td id="userLayerMessenger"></td>
+                        </tr>
+
+                        <tr id="trMessenger">
+                            <th></th><!--메신저-->
+                            <td><a href="javascript:;" data-setup="Messenger" data-url="/ECERP/ESC/ESC003P_33" data-width="750" data-height="500">Messenger</a></td>
+                            <td id="userLayerMessenger"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="qm-myinfo-footer">
+
+            <div class="wrapper-toolbar">
+                <div class="pull-left"><a href="javascript:;" id="userLayerClose">關閉</a></div>
+                <div class="pull-right" id="userLayerDataProprietor"></div><!--자료권리자-->
+            </div>
+        </div>
+    </div>
+    <div id="Notice_List" class="wrapper-notification bottom right side">
+    </div>
+
+    <div id="Notice_Contents" class="wrapper-notification main"></div>
+
+    <div class="wrapper-frame-quick-menu">
+        <!--bookmark bar context menu-->
+        <ul class="dropdown-menu context-menu">
+            <li><a href="javascript:;" onclick="ecount.global.findPageInstance('ecp.ecp050fav').changeFavoriteName();" id="cmChangeName"></a></li>
+            <li><a href="javascript:;" onclick="ecount.global.findPageInstance('ecp.ecp050fav').deleteFavorite();" id="cmDelFav"></a></li>
+        </ul>
+
+        <div class="wrapper-bookmark-bar" id="bookmarkBar"></div>
+
+        <div class="quick-menu" id="quick-menu">
+            <div class="qm-company-logo">
+                <a data-toggle="tooltip" data-placement="right" target="_top">
+                    <img src="/ECMain/ECount.Common/Images/main/ecount_logo.gif" width="110" height="35">
+                </a>
+            </div>
+
+            <div class="qm-company-info">
+                <span class="label label-default label-light"> B3 / G8021-103</span>
+            </div>
+
+            <div class="qm-responsive-icon">
+                <a class="qm-icon-logo-simbol"><img src="/ECErp/Contents/images/ci/ecount-ci-simbol-40-35.png" width="40" height="35"></a>
+                <a href="javascript:;" onclick="showBookmark();" class="qm-icon-bookmark"></a>
+                <a href="javascript:;" onclick="showFunction();" class="qm-icon-function-group"></a>
+                <a href="javascript:;" onclick="toggleResponsiveType(this);" class="qm-icon-responsive-type-a"></a>
+            </div>
+
+            <div class="qm-ecount-search">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inputecSearch" />
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" onclick="ecount.global.findPageInstance('ecp.ecp050fn').ecountSearchClick();"><span class="fa fa-search"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qm-btn-customer-center">
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="ecCustomerSearch"></button>
+                    <ul class="dropdown-menu">
+                        <li id="ecQABoard"><a href="javascript:;"></a></li>
+                        <li id="ecScreenCast"><a href="javascript:;"></a></li>
+                        <li id="ecRemote"><a href="javascript:;"></a></li>
+                        <li id="ecBrowserOptimization"><a href="javascript:;"></a></li>
+                        <li class="divider"></li>
+                        <li id="ecMenual"><a href="javascript:;"></a></li>
+                        <li id="ecAdditionalService"><a href="javascript:;"></a></li>
+                        <li id="ecFeesPayment"><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+                <button id="callBackRequest" class="btn btn-primary btn-inverse btn-call-center">要求電話諮詢</button>
+            </div>
+
+            <ul class="qm-icon text-right" id="ecMenuFunction">
+                <li class="qm-icon-new-window" data-toggle="tooltip" data-placement="left" title="" id="ecnwindow"></li>
+                <li class="qm-icon-menu-view-all" data-toggle="tooltip" data-placement="left" title="" id="ecMenuView">
+                    <ul class="dropdown-menu pull-right" id="ecViewList">
+                        <li id="ecMenuSitemap"><a href="javascript:;"></a></li>
+                    </ul>
+                </li>
+                <li class="qm-icon-memo" data-toggle="tooltip" data-placement="left" title="" id="ecMemo"></li>
+                <li class="qm-icon-notification" data-toggle="tooltip" data-placement="left" title="" id="ecNotification">
+                    <span class="badge" id="ecNotificationCount"></span>
+                    <ul class="dropdown-menu pull-right" id="ecNotificationList"></ul>
+                </li>
+                <li class="qm-icon-msg" data-toggle="tooltip" data-placement="left" title="" id="ecMsg">
+                    <span class="badge" id="ecMsgCount"></span>
+                    <ul class="dropdown-menu pull-right" id="ecMsgList"></ul>
+                </li>
+                <li class="qm-icon-messenger" data-toggle="tooltip" data-placement="left" title="" id="ecMessenger">
+                    <span class="badge" id="ecMessengerCount"></span>
+                    <ul class="dropdown-menu pull-right" id="ecMessengerList"></ul>
+                </li>
+                <li class="qm-icon-sms" data-toggle="tooltip" data-placement="left" title="" id="ecsms"></li>
+                <li class="qm-icon-email dropdown" data-toggle="tooltip" data-placement="left" title="" id="ecMail">
+                    <span class="badge" id="EcMailCount"></span>
+                    <ul class="dropdown-menu pull-right" id="ecMailList"></ul>
+                </li>
+                <li class="qm-icon-personalization" data-toggle="tooltip" data-placement="left" title="" id="ecPersonal"></li>
+                
+                <li class="qm-icon-logout" data-toggle="tooltip" data-placement="left" title="" id="ecLogout">
+                    <ul class="dropdown-menu pull-right" id="ecLogoutList"></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="menuArea" class="wrapper-frame-global-nav">
+
+    </div>
+
+    <div class="wrapper-frame-body">
+        <div style="display:none;"></div>
+        <iframe id="mainbody" name="mainbody" src="" frameborder="0" style="display:none;position: absolute;height: 100%;width: 100%;border: none;"></iframe>
+    </div>
+
+    <div class="wrapper-sitemap hidden">
+        <div class="wrapper-overlay"></div>
+        <div class="sitemap-close" onclick="hideSitemap();"></div>
+        <div class="sitemap"></div>
+    </div>
+
+    <form id="frmSuccess" name="frmSuccess" action="/ECERP/LOGIN/ERPLoginSuccess" method="post">
+        <input type="hidden" id="domain" name="domain" />
+        <input type="hidden" id="lan_type" name="lan_type" />
+        <input type="hidden" id="boss_name" name="boss_name" />
+        <input type="hidden" id="b_tel" name="b_tel" />
+        <input type="hidden" id="b_email" name="b_email" />
+        <input type="hidden" id="b_hp_no" name="b_hp_no" />
+        <input type="hidden" id="master_flag" name="m_flag" />
+        <input type="hidden" id="ecount_flag" name="ecount_flag" />
+        <input type="hidden" id="home_gubun" name="home_gubun" />
+        <input type="hidden" id="server_name" name="server_name" />
+        <input type="hidden" id="access_site" name="access_site" />
+        <input type="hidden" id="FOREIGN_YN" name="FOREIGN_YN" />
+        <input type="hidden" id="loginstat" name="loginstat" />
+        <input type="hidden" id="seq" name="seq" />
+        <input type="hidden" id="loginid" name="loginid" />
+        <input type="hidden" id="loginip" name="loginip" />
+        <input type="hidden" id="logindays" name="logindays" />
+        <input type="hidden" id="loginPossible" name="loginPossible" />
+        <input type="hidden" id="comDes" name="comDes" />
+        <input type="hidden" id="m_cnt" name="m_cnt" />
+        <input type="hidden" id="login_type" name="login_type" />
+        <input type="hidden" id="passwordUpdateDatys" name="passwordUpdateDatys" />
+        <input type="hidden" id="loginck" name="loginck" />
+        <input type="hidden" id="hidExSID" name="hidExSID" />
+        <input type="hidden" id="hidFromCs" name="hidFromCs" />
+        <input type="hidden" id="hidCnFlag" name="hidCnFlag" />
+        <input type="hidden" id="move_url" name="move_url" />
+        <input type="hidden" id="new_flag" name="new_flag" />
+    </form>
+
+    <iframe id="s_page" name="s_page" class="hidden"></iframe>
+
+
+    <script src="/ECERP/Contents/optimized/init.js?v=280501059425560246-19"></script>
+    
+    <script src="/ECERP/Contents/optimized/tpl.js?v=1322194872136688730-19"></script>
+    <script src="/ECERP/Contents/optimized/obprepare.js?v=280501059425560246-19"></script>
+    <script src="/ECERP/Contents/optimized/culture.zh-TW.js?v=4597633343631021943-19"></script>
+    
+    
+    <script src="/ECERP/Contents/optimized/xcessbody.js?v=-5332045496351140473-19"></script>
+    <script src="/ECERP/Contents/optimized/jquery.prototype.js?v=949567032090450560-19"></script>
+    <script src="/ECERP/Contents/optimized/92e0c59c8c80e9357bea06357513e229_b2c287d7c377ef56f927992989775e24.js?v=3835806530145988335-19"></script>
+
+    <script language="javascript">
+    // Set global configuration for require
+    require.config({
+        baseUrl: "Contents/",
+        define: {
+            //필수 로딩
+                "jquery-ui": "/ECERP/Contents/optimized/jquery-ui.js?v=7331493815403735223-19",
+            "jquery-addon": "/ECERP/Contents/optimized/jquery.addon.js?v=8726192875163933710-19",
+            "jquery-validate": "/ECERP/Contents/optimized/jquery.validate.js?v=-1763989904942370272-19",
+            "ua-parser": "/ECERP/Contents/optimized/ua-parser.min.js?v=-3271810385708017324-19",
+                "ecount.widget.base": ["ecount-ep", "widget-ep-require", "/ECERP/Contents/optimized/ecount.widget.base.js?v=6826431212415535279-19"],
+                "ecount.widget.page": "/ECERP/Contents/optimized/ecount.widget.page.js?v=-683108738114855660-19",
+            "ecount-widget": "/ECERP/Contents/optimized/ecount.widget.js?v=-6814937053031421953-19",
+            "ecount-combine": "/ECERP/Contents/optimized/ecount.widget.combine.js?v=8839113181944667056-19",
+                "ecount-textEditor": ["/ECERP/Contents/optimized/editor.css?v=5547572548885148956-19", "/ECERP/Contents/optimized/ecount.widget.textEditor.js?v=2136052369581979809-19"],
+            "ecount-grid": "/ECERP/Contents/optimized/ecount.grid.js?v=-495169949644840909-19",
+            "ecount-graphics": "/ECERP/Contents/optimized/ecount.graphics.js?v=-5750493919920071479-19",
+            //선택적 로딩 - 위젯
+            "widget-openMarket": "/ECERP/Contents/optimized/ecount.widget.openMarket.js?v=-8504686648178681840-19",
+            "ecount-formset": "/ECERP/Contents/optimized/ecount.widget.formset.js?v=-2644992549797928520-19",
+                "ecount-ep": "/ECERP/Contents/optimized/ecount.ep.js?v=6297577591878880205-19",
+                "widget-ep-require": "/ECERP/Contents/optimized/widget.ep.require.js?v=-955233007609548845-19",
+                "widget-ep-core": "/ECERP/Contents/optimized/widget.ep.core.js?v=9220420076293318663-19",
+                "ecount-resources": "/ECERP/Contents/optimized/ecount.resource.js?v=-1372257790094240867-19",
+            //선택적 로딩  - 업무공통
+            "ecmodule.account.common": "/ECERP/Contents/optimized/ecmodule.account.common.js?v=7844435835085279668-19",
+            "ecmodule.account.slipsDetails": "/ECERP/Contents/optimized/ecmodule.account.slipsDetails.js?v=2454617118318339015-19",
+
+            "ecmodule.account.validator": "/ECERP/Contents/optimized/ecmodule.account.validator.js?v=2454617118318339015-19",
+            "ecount.errorMessage": "/ECERP/Contents/optimized/ecount.errorMessage.js?v=-44777436183867923-19",
+            "ecmodule.common.calculation": "/ECERP/Contents/optimized/ecmodule.common.calculation.js?v=-1617551554918735775-19",
+            //Manage
+            "ecmodule.manage.common": "/ECERP/Contents/optimized/ecmodule.manage.common.js?v=-1617551554918735775-19",
+
+            //선택적 로딩  - 상속 받을 부모 페이지
+            "ecount.page.panel": "/ECERP/Contents/optimized/ecount.page.panel.js?v=3148512344626971872-19",
+            "ecount.page.panelGroup": "/ECERP/Contents/optimized/ecount.page.panelGroup.js?v=981213952248667457-19",
+            "ecount.page.basic": "/ECERP/Contents/optimized/ecount.page.basic.js?v=-6819062444332296256-19",
+                "ecount.page.list": ["/ECERP/Contents/optimized/ecount.page.list.js?v=-6334166717266950463-19", "/ECERP/Contents/optimized/ecmodule.common.approval.js?v=6244239333968663372-19"],
+            "ecount.page.list_new": "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19",
+            "ecount.page.list.orderManagement": "/ECERP/Contents/optimized/ecount.page.list.orderManagement.js?v=6414143018117552260-19",
+            "ecount.page.input": "/ECERP/Contents/optimized/ecount.page.input.js?v=7998715900863188382-19",
+            "ecount.page.formset": "/ECERP/Contents/optimized/ecount.page.formset.js?v=-7328882189296117898-19",
+            "ecount.page.formsetBasic": ["ecount.page.formset", "/ECERP/Contents/optimized/ecount.page.formsetBasic.js?v=3375332353891803510-19"],
+            "ecount.page.Xformset": "/ECERP/Contents/optimized/ecount.page.Xformset.js?v=7682687343214839984-19",
+            "ecount.page.boardset": "/ECERP/Contents/optimized/ecount.page.boardset.js?v=-6819062444332296256-19",
+            "ecount.page.boardView": "/ECERP/Contents/optimized/ecount.page.boardView.js?v=3894140644771412738-19",
+            "ecount.page.boardlist": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.boardlist.js?v=-4933902102501497238-19"],
+            "ecount.page.list.schedule": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.list.schedule.js?v=-6471216397489329369-19"],
+            "ecount.page.list.bulkForm": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list.bulkForm.js?v=8904022285487346049-19"],
+            "ecount.page.boardinput": "/ECERP/Contents/optimized/ecount.page.boardinput.js?v=-8947232006872951867-19",
+            "ecount.page.input.account": ["ecount.page.input", "/ECERP/Contents/optimized/ecount.page.input.account.js?v=-2720363705261982047-19"],
+            "ecount.page.input.inventory": ["ecount.page.input", "/ECERP/Contents/optimized/ecount.page.input.inventory.js?v=8922559400473979287-19", "/ECERP/Contents/optimized/ecmodule.common.approval.js?v=6244239333968663372-19"],
+            "ecount.page.input.invoiceBasicForm": ["ecount.page.input.account", "ecmodule.account.common", "/ECERP/Contents/optimized/ecount.page.input.invoiceBasicForm.js?v=8922559400473979287-19"],
+            "ecount.page.list.status.inventory": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.list.status.js?v=8183871077120431067-19", "/ECERP/Contents/optimized/ecount.page.list.status.inventory.js?v=6248075161783575973-19"],
+            "ecount.page.list.status.account": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.list.status.js?v=8183871077120431067-19", "/ECERP/Contents/optimized/ecount.page.list.status.account.js?v=1493277086927302345-19"],
+            "ecount.page.list.status.manage": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.list.status.js?v=8183871077120431067-19", "/ECERP/Contents/optimized/ecount.page.list.status.manage.js?v=-3949286684910822742-19"],
+            "ecount.page.list.status.multi": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19", "/ECERP/Contents/optimized/ecount.page.list.status.js?v=8183871077120431067-19", "/ECERP/Contents/optimized/ecount.page.list.status.multi.js?v=5500906551056886142-19"],
+            "ecount.page.list.search.inventory": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecmodule.inventory.slipInfo.js?v=-2353351608469925353-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.inventory.js?v=4880892465210052913-19"
+            ],
+            "ecount.page.list.search.account": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.account.js?v=-6252507955574771820-19"
+            ],
+            "ecount.page.list.search.account.check": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.account.js?v=-6252507955574771820-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.account.check.js?v=6399185345259483656-19"
+            ],
+            "ecount.page.list.search.account.bonddebit": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.account.js?v=-6252507955574771820-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.account.bonddebit.js?v=918485224159466935-19"
+            ],
+            "ecount.page.list.search.manage": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecmodule.manage.slipInfo.js?v=-4593044525670723152-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.manage.js?v=597021339868133363-19"
+            ],
+            "ecount.page.list.search.pay": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list_new.js?v=-5091933710704534740-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.js?v=-5866112551249015298-19"
+                , "/ECERP/Contents/optimized/ecount.page.list.search.pay.js?v=8676945571992686477-19"
+            ],
+            "ecount.page.list.collectinvoice.input": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list.collectinvoice.js?v=1493277086927302345-19", "/ECERP/Contents/optimized/ecount.page.list.collectinvoice.input.js?v=-7516064724230191274-19"],
+            "ecount.page.list.collectinvoice.status": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list.collectinvoice.js?v=1493277086927302345-19", "/ECERP/Contents/optimized/ecount.page.list.collectinvoice.status.js?v=-4031391473585826738-19"],
+            "ecount.page.customerSupport": "/ECERP/Contents/optimized/ecount.page.customerSupport.js?v=-2858330231386290756-19",
+            "ecount.page.popup.type1": "/ECERP/Contents/optimized/ecount.page.popup.type1.js?v=-1952091434298919685-19",
+            "ecount.page.popup.type2": "/ECERP/Contents/optimized/ecount.page.popup.type2.js?v=-6371462714332352903-19",
+            "ecount.page.popup.type3": "/ECERP/Contents/optimized/ecount.page.popup.type3.js?v=-2858330231386290756-19",
+            "widget.lib.dragable": "/ECERP/Contents/optimized/dragable.js?v=-5607383479427995372-19",
+            "ecount.page.changeItem": "/ECERP/Contents/optimized/ecount.page.ChangeItem.js?v=1788679171496284464-19",
+            "ecount.page.selectedItem": "/ECERP/Contents/optimized/ecount.page.selectedItem.js?v=-6325087405434450541-19",
+            "ecount.page.changeSelected": "/ECERP/Contents/optimized/ecount.page.changeSelected.js?v=-4928504991639666601-19",
+            "ecount.page.popupSerial": "/ECERP/Contents/optimized/ecount.page.popup.serial.js?v=-6980422852681443232-19",
+            "ecount.page.list.unusedCode": "/ECERP/Contents/optimized/ecount.page.list.unusedCode.js?v=-4928504991639666601-19",
+            "ecount.page.list.serial.status": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list.serial.js?v=1679419178702667011-19", "/ECERP/Contents/optimized/ecount.page.list.serial.status.js?v=995626751969324029-19"],
+            "ecount.page.list.serial.popup": ["ecount.page.list", "/ECERP/Contents/optimized/ecount.page.list.serial.js?v=1679419178702667011-19", "/ECERP/Contents/optimized/ecount.page.list.serial.popup.js?v=2277939760440368822-19"],
+
+            //선택적 로딩
+            "jstree": "/ECERP/Contents/optimized/jstree.js?v=789261768518257604-19",   //jstree - 계층 그룹 사용
+            "websocket": "/ECERP/Contents/optimized/web_socket.js?v=2035716270584355346-19",   //websocket
+            "pluploader": "/ECERP/Contents/optimized/plupload.js?v=6742795283574450376-19",   //pluploader
+            "cloud": "/ECERP/Contents/optimized/cloud.js?v=-993136347467955287-19",   //pluploader
+            "inventorylib.common": "/ECERP/Contents/optimized/inventorylib.common.js?v=-574939238691065756-19", //판매입력 유틸리티
+                "ecmodule.inventory.loadslipinfo": "/ECERP/Contents/optimized/ecmodule.inventory.loadslipinfo.js?v=4181888835115633149-19", //잔량불러오기
+            "ecmodule.inventory.orderMngt": "/ECERP/Contents/optimized/ecmodule.inventory.orderMngt.js?v=-8947232006872951867-19", //Order management
+            "commonlib.base": "/ECERP/Contents/optimized/commonlib_v1.base.js?v=-4933902102501497238-19", //판매도 사용하고 회계도 사용하는 공용 유틸리티
+            "commonlib.multiGridXForm": "/ECERP/Contents/optimized/commonlib_v2.base.js?v=-8947232006872951867-19",
+            "ecount.page.slipInventoryBasicForm": ["/ECERP/Contents/optimized/ecount.page.slipInventoryBasicForm.js?v=-4933902102501497238-19"
+                    , "/ECERP/Contents/optimized/ecmodule.common.approval.js?v=6244239333968663372-19"], //재고 전표 화면
+            "jqplot.style": "/ECERP/Contents/optimized/jqplot.style.css?v=-578282162192767067-19", // 그래프 CSS
+            "homepage.style": "/ECERP/Contents/optimized/homepage.css?v=1155563253118761240-19", // 영업 페이지 관련 CSS
+            "jqplot.script": "/ECERP/Contents/optimized/jqplot.script.js?v=522202366122996019-19", //그래프 스크립트
+            "ecmodule.inventory.guides": ["/ECERP/Contents/optimized/ecmodule.inventory.guides.js?v=-2353351608469925353-19",
+                                              "/ECERP/Contents/optimized/ecmodule.inventory.customtabs.js?v=-2353351608469925353-19"], //사용자 탭설정에서 사용(조회상단)
+
+                "inventory.guides.api": ["/ECERP/Contents/optimized/ecmodule.inventory.guidescalledbyapi.js?v=-7717746812583266575-19",
+                                                    "/ECERP/Contents/optimized/ecmodule.inventory.customtabscalledbyapi.js?v=-7717746812583266575-19"], //사용자 탭설정에서 사용(조회상단) - 추후 걷어낼 예정
+                "common.usertabs.view.api": "/ECERP/Contents/optimized/ecmodule.common.usertabs.view.js?v=429674995975270583-19",
+                "common.usertabs.report.api": "/ECERP/Contents/optimized/ecmodule.common.usertabs.report.js?v=-7717746812583266575-19",
+                "common.guides.api": "/ECERP/Contents/optimized/ecmodule.inventory.guidescalledbyapi.js?v=-7717746812583266575-19",
+                "inventory.serial.api": ["/ECERP/Contents/optimized/ecmodule.inventory.serial.js?v=3796842119466461430-19"], //시리얼관련
+            "notificationConnect": "/ECERP/Contents/optimized/NotificationConnect.js?v=3044185305968919364-19", ////선택적 로딩 - 메신저 소켓연결
+            "ecmodule.common.pathTracking": "/ECERP/Contents/optimized/ecmodule.common.pathTracking.js?v=-2353351608469925353-19"
+            /* Add ecmodule by Lan */
+                , "ecmodule.inventory.eApproval": "/ECERP/Contents/optimized/ecmodule.inventory.eApproval.js?v=-1617551554918735775-19"
+                , "ecmodule.inventory.otherSlipCreate": "/ECERP/Contents/optimized/ecmodule.inventory.otherSlipCreate.js?v=3796842119466461430-19"
+                , "ecmodule.inventory.csConfirm": "/ECERP/Contents/optimized/ecmodule.inventory.csConfirm.js?v=3796842119466461430-19"
+            , "CloudUploader": ["/ECERP/Contents/optimized/ecmodule.common.googledrive.js?v=-1617551554918735775-19", //선택적 로딩 - 구글드라이브
+                                            "/ECERP/Contents/optimized/ecmodule.common.onedrive.js?v=-2353351608469925353-19",
+                                            "/ECERP/Contents/optimized/ecmodule.common.dropbox.js?v=-1617551554918735775-19",
+                                            "/ECERP/Contents/optimized/ecmodule.common.box.js?v=-1617551554918735775-19",
+                                            //"/ECERP/Contents/optimized/client_platform.js?v=573029607629320639-19",
+                                            "https://apis.google.com/js/client:platform.js"
+                ],
+                "ecount.tutorial": ["/ECERP/Contents/optimized/tutorial.css?v=359785825622853971-19",
+                                                      "/ECERP/Contents/optimized/ecount.tutorial.player.js?v=949791837412903137-19"], //튜토리얼 플레이어 동적로딩
+                "ecount.sms": "/ECERP/Contents/optimized/sms.css?v=3990505433825121512-19",
+                "ecmodule.common.slipLink": "/ECERP/Contents/optimized/ecmodule.common.slipLink.js?v=-6391514085615674099-19",
+                "common.payOversea": "/ECERP/Contents/optimized/common.payOversea.js?v=1194471692812055425-19"
+            }
+        });
+
+        window.ecResourcesList = [
+            "/ECERP/Contents/optimized/ecount.resource.lbl0.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl2001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl4001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl6001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl8001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl10001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl12001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl13001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl30001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl90001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.lbl93001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.btn0.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.btn10001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg0.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg2001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg4001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg6001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg6001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg8001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg10001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg11001.zh-TW.js?v=-8356418429058483424-19",
+            "/ECERP/Contents/optimized/ecount.resource.msg30001.zh-TW.js?v=-8881817615101093443-19"
+        ];
+    </script>
+
+    
+    <script src="/ECERP/Contents/optimized/ecount.infra.js?v=-7900625628590118002-19"></script>
+    
+    <script src="/ECERP/Contents/optimized/ecount.frameworks.js?v=-869759511135163677-19"></script>
+    
+    <script src="/ECERP/Contents/optimized/ecount.menu.js?v=-7905715803878618024-19"></script>
+    
+    <script src="/ECERP/Contents/optimized/ecount.common._extra.js?v=-4824798024916536129-19"></script>
+    
+    
+    <script type="text/javascript">
+
+        
+        var favoritesInfo = {"isUseFavorites":true,"isFavoritesAddition":false,"menuSeq":0,"programSeq":0,"favoritesSeq":0,"favoritesSortSeq":0,"programID":"ECP_ECP050M","permissionID":""};ecount.system.IsEnableNoL4 = false;
+
+        var viewBag = $.xextend({"_x_":"3241491654515b445c401f515b5f545d561c575e5f44505c4d13084f13717b7c6d777e7671130816560a040303161d107074716b707f601308061d10757c666b72737872100e1360161d106270666b72737872100e1360161d106162776b75776465100e137c161d10796862757677777e7f64707c6d6e76756577160b4916687775636d7d7f6261656d727e60797066160b106d686b6d131e167c7d7a657a6b787c6464666b777d667c73601308167c7f79131e1675736d6e7b7a6167606e747b637f7565100e1376161d10707066716e7b7a6167606e7d66757766130816687f70131e16687775636d7d7f6261656d72637d7a656d7779736613085a445e581d10797e7c60796d7d7f6261656d72637d7a656d7779736613085a445e581d1070706b6b787c6464666b77607b7f666b727a7563100e5f47585d1e16687775636d7d7f6261656d7670717f6e717c7060160b5c415d5e18137f7b7f667c6e7b7a6167606e707572796b727a7563100e5f47585d1e1675736d6e7b7a6167606e707572796b727a7563100e5f47585d1e16687775636d7d7f6261656d72637d7a656d767d737a7a100e575358425718137f7b7f667c6e7b7a6167606e74667e7c606e7078707c7f130852505e47541e1675736d6e7b7a6167606e74667e7c606e7078707c7f130852505e47541e16687775636d7d7f6261656d7670717f6e7078707c7f130852505e47541e167c7d7a657a6b787c6464666b7373777a6d767d737a7a100e575358425718137675686d7d7f6261656d7670717f6e7078707c7f130852505e47541e16687775636d7b64666464666b777d667c7360130816686b6d681018137f7b7f667c6e7d61656261656d727e60797066160b10797c1018137675686d7b64666464666b777d667c73601308167576161d10707066716e7d61656261656d7b63767163100e136b79751018136b7170606b77607b7f666b727a7563100e131018137f7b7f667c6e74667e7c606e717c7060160b10161d1070706b6b77607b7f666b727a7563100e131d161d106d7473666e707572796b727a7563100e131d161d10797e7c60796d7670717f6e717c7060160b10161d1070706b6b7373777a6d77797366130816131e16687775636d72637d7a656d767d737a7a100e575358425718137f7b7f667c6e74667e7c606e7078707c7f130852505e47541e1675736d6e74667e7c606e7078707c7f130852505e47541e16687775636d7670717f6e7078707c7f130852505e47541e167c7d7a657a6b7373777a6d767d737a7a100e575358425718137675686d7670717f6e7078707c7f130852505e47541e1679616b656b6474100e021e16797d61636d7d7f6261656d727e60797066160b105c131e167c7b7a6e7b7a6167606e747b637f7565100e135f59131e16657b79746d7d7f666464666b7e60707460160b105c5c1018137a7b64606b787c6464666b77607b7f666b727a7563100e5f47585d1e167c7b7a6e7b7a6167606e74667e7c606e717c7060160b5c415d5e18137a7b64606b787c6464666b7373777a6d7779736613085a445e581d1079787c6b787c6464666b7373777a6d7779736613085a445e581d107c7e67666e7b7a6167606e74667e7c606e7078707c7f130852505e47541e167c7b7a6e7b7a6167606e74667e7c606e7078707c7f130852505e47541e16797d61636d7d7f6261656d7670717f6e7078707c7f130852505e47541e167c7b7a6e7b7a6167606e707572796b737e757f79160b54555d41511d107c7e67666e7d61656261656d727e60797066160b107c131e167c7b7a6e7d61656261656d727e60797066160b10595c1018136171726d7b64666464666b777d667c73601308164241161d1060787f716e7d61656261656d7b63767163100e135a59421018137a7b64606b77607b7f666b727a7563100e131018137f7d7f6d72637d7a656d777973661308160b1018136171726d72637d7a656d777973661308160b1018137a7b64606b7373777a6d77797366130816131e167c7b7a6e707572796b727a7563100e131018136171726d7670717f6e717c7060160b10161d107c7e67666e74667e7c606e7078707c7f130852505e47541e167c7b7a6e74667e7c606e7078707c7f130852505e47541e166277776e74667e7c606e7078707c7f130852505e47541e16797d61636d7670717f6e7078707c7f130852505e47541e167c7b7a6e707572796b737e757f79160b54555d41511d106774716b7373777a6d767d737a7a100e575358425718137363756d727d73731308404347511d10707066716e74667e7c606e717c7060160b10161d106374777f75736d6e74667e7c606e717c7060160b101c131e16657b79746d72637d7a656d77797366130816131e16757360746d7670717f6e717c7060160b10161d106374777f75736d6e707572796b727a7563100e131b161d1060787f716e707572796b727a7563100e13101813767565776b77607b7f666b737e757f79160b54555d41511d106374777f75736d6e74667e7c606e7078707c7f130852505e47541e16657b79746d72637d7a656d767d737a7a100e454041541e16757360746d7670717f6e7078707c7f1308404347511d106374777f75736d6e707572796b737e757f79160b54555d41511d1060787f716e707572796b737e757f79160b54555d41511d1070706671657b79746d7b63767163100e13564345101813777078667b636d7d75100e1377777e677a65101813777078666b7566160b10060103021c02011c030d65020c0b01040b02051f0706131e1676607b64626b72766b787c646466160b10040102040010181375667e67646e71706e7d6165626165100e130204010205131e167a574d13084f13717b7c6d777e7671130816560a040303164c4f18137766706d7878616013086f4a1073637d61616d7775100e130204010205131e16737773787c6b68777563100e000b05031e167460756e7c79130816d782a5d4aebf134f184a1073637d61616d7775100e130204010206131e16737773787c6b68777563100e000b0c081e167460756e7c79130816d48b87d7baa4134f691d10727e7c6000100e135f5d52405b425d52451f4d505a5158101813747b7f6606130816555d40445f161d10727e7c6002100e1355415d5b59131e16777d7a656d67786871130805071e16777d7a656d677868716e6160637b7a76100e135e53131e16777d7a656d677064716e6b7a1308404347511d106e74607b6e717c7a6d6d7f100e454041541e166b77667e6d707861647d736d6e6b7a130852505e47541e16657a7b646d677462756373607e606b656b6474100e1371161d107074716b627764706075657d666e666d6177160b1064131e16657a7b646d677462756373607e60160b1018131e167577776e617161736670667b63100e131c161d10777973606e6b7a13081668101813667b616d787e757b6e67667d100e131d71727f55585c1b74715b445c401f715b5c5f5b5f1d7d5c535354411b5c535d5f1d51525d415f466b5d5d535e1c535854161d1079747f7b6e627b61676413081600101813717c70666b617d6464626b656b6474100e1376161d10777973606e73787060796e666d6177160b1060131e167c77797e6d647e6261616d606862711308167d1018137f717c7d6b707e75637f6b656b6474100e1366164c1e1654515b445c401f515b5f545d561c4142574613084f137b701308165647514246161d107d7f6261656d70687c757c7b776e657d75667c6e6b7a1308167f1018137b7a6167606e657d75667c130802010218137e757377786e657d75667c13080504071813747d7d7e6b727a7f6e6b7a1308167f1018137f7a6e747d7d7e6b727a7f6e6b7a1308167f1018137f7a6e7e757377786e657d75667c13080304021813747d7d7e6b727a7f6e6b7a03100e137c161d10787070717d6d63787660790005130805030218137b7a6167606e657d75667c0303160b0001041e167d7376747e6b667b70657a0603100e0000041d107d7f6261656d63787660790006130806040718137b7a6167606e7c617c7071636d6378766079100e0300031d107d7f6261656d7a647f7674606b667b70657a0600100e011e16777b787d6d7a647f7674606b727a7f6e6b7a1308167f101813747d7d7e6b7f67797377666e717c7a6d6d7f00160b106d131e1678616b627e7d616d7d7f626165666d61776b7c7d6274100e57535842571813607162627b7f617d67776b687c160b106d131e16637767617d7a627b62746d75616278686d606862711308167d101813677d6e687b7e7f160b104e5e5d591c0b04131e16707e786e75667e67646e62667e76160b1004131e16707e786e75667e67646e71616266160b1004131e16707e786e75667e67646e657c1308160110181373787d6d73637d61616d677866711308160110491d1051525d415f461a525d5a575b531f5b5a47575a455d4648100e4a107b64666b7577776e63160b0218137671726d6160100e011e167e67606e7671726d641308061d107d7f6d7074716b60100e011e16787c6b7577776e6765130816011018137b7a6e7671726d641308061d107074716b60100e011e167466776e7671726d6160100e011e167577776e62160b0018137671776d64637b77746d6270666b757777787f757d6d647d737774100e011e167577776e60756577160b0218137671726d70747475647e601308041d106162776b787c62747c607e606d6e7075627b776e76756577160b54555d41511d107d7f64717f667b636b6b73736778716b75736074100e5f47585d4f181357575e475a451c575e5c5258551a5051575e475a45100e4a4f181357575e475a451c575e5c5258551a56405b44424350405113084f4c1e1654515b445c401f515b5f545d561c5a50465d5e5c160b49166461716e737862777563717c1308404347511d106162776b677b70747d6b7076627871711308404347514c1e1654515b445c401f515b5f545d561c58585f5d4557501f5f515f47160b49491d1051525d415f461a525d5a575b531f5e5d5c5b4054561a57575545474654100e4a106162776b627f67130852505e47541e166461716e7f75787e160b4646445718136767746d77707e787373777a100e5753584257491d1051525d415f461a525d5941535a48100e4a10777e7f6b727d7074100e13550c010005131e16727d796e767162100e13d7b0b5d5a8bad4a8b8dbada1d7b19dd7bb89101813747b63777d767c6b687c160b10040910181377796e7779707b7813081647515c54405d425a427157575e475a455746411c575e1c5f4310491d1051525d415f461a44415143100e4a107d75100e135541544140131e167c7c736e74787075160b54555d41511d107d7f6d647060601308160102040105161d10616277666e7c7b130816000207131e167e7c78686d796862757677160b107a131e167773626e6b7a130816681018137475676d6761607170766b687c160b106d131e167773626e7d64747c6b656b6474100e5f47585d1e167d737a6e666d6177160b104e591f6066101813677d6e7f717f676b656b6474100e1303161d10667461647e7c677864716e6b7a130816681018137a646e7c7b130816010b0609010c050507021018137779707b781308164557474572535c535d5d1c575e5f161d10777973606e627b6167646e666d6177160b107a131e16727a75656d757d73667c6d606862711308167f1018137f717c7d6b617d6464626b656b6474100e137c161d1079747f7b6e73787060796e666d6177160b107a134f181357575e475a451c4e5e5c5173534754765545534713084f135b5a5f5746775b585461405e405556577c5e4140130816545447531c51525d415f465143421a525d59131e165e4740544072585e5162465b435353547a5b4246160b10515e54471f57575e475a455746411c575e5f161d1047544042585151775b585461405e405556577c5e4140130816131e16615652625746475b5754685b5f57715f56445e5b5a45100e135a404542470b1d1b415652531c51525d415f465143421a525d590b0a0005011b6357445e4040625746475b575410491d1064544059584147585d5a13084f4c4f","LocalTime":"2018-06-03T23:12:34.2412574","Language":"zh-TW","FormInfos":{},"InitDatas":{"menuJson":{"Data":{"IsPopUp":"N","IsOnlyMyPage":"N","IsCertificate":"Y","TrialMenuInfo":{"COM_CODE":"G8021","EXPIRE_DATE":"2020-11-20T00:00:00","FOREIGN_YN":"08","USER_TYPE":"1"},"UserFlag":"C","MainMenuData":[{"MENU_SEQ":"6","PARENT_MENU_SEQ":null,"MENU_CD":null,"MENU_NAME":"我的頁面","RESX_CODE":"LBL93013","USE_YN":null,"SORT":null,"SORT2":null,"MENU_URL":null,"MENU_TYPE":"6","GW_USE":null,"MAX_USERS":null,"FLAG":null,"USE_STATUS":null,"FREE_EXPIRE_DATE":null,"FREE_USED_YN":null,"SUB_MENU_SEQ":"603","SUB_MENU_CD":"00000","BODY_URL":"","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"8","PARENT_MENU_SEQ":null,"MENU_CD":null,"MENU_NAME":"系統設定","RESX_CODE":"LBL93005","USE_YN":null,"SORT":null,"SORT2":null,"MENU_URL":null,"MENU_TYPE":"8","GW_USE":null,"MAX_USERS":null,"FLAG":null,"USE_STATUS":null,"FREE_EXPIRE_DATE":null,"FREE_USED_YN":null,"SUB_MENU_SEQ":"1601","SUB_MENU_CD":"M080100000000","BODY_URL":"/ECERP/ESC/ESC002M?IsSc=Y","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"4","PARENT_MENU_SEQ":"0","MENU_CD":"M040000000000","MENU_NAME":"進銷存","RESX_CODE":"LBL93726","USE_YN":"Y","SORT":"1","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=4","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"30","SUB_MENU_CD":"M040200000000","BODY_URL":"/ECErp/ESD/ESD007M","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"783","PARENT_MENU_SEQ":"0","MENU_CD":"M100000000000","MENU_NAME":"進銷存(輔)","RESX_CODE":"LBL93727","USE_YN":"Y","SORT":"2","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=783","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"36","SUB_MENU_CD":"M100500000000","BODY_URL":"/ECERP/ESS/ESS015R","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1","PARENT_MENU_SEQ":"0","MENU_CD":"M010000000000","MENU_NAME":"會計","RESX_CODE":"LBL93659","USE_YN":"Y","SORT":"3","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=1","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"17","SUB_MENU_CD":"M010900000000","BODY_URL":"/ECERP/EBZ/EBZ001M","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"5","PARENT_MENU_SEQ":"0","MENU_CD":"M050000000000","MENU_NAME":"會計(輔)","RESX_CODE":"LBL93660","USE_YN":"Y","SORT":"4","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=5","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"684","SUB_MENU_CD":"M050400000000","BODY_URL":"/ECERP/EBC/EBC003M","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"748","PARENT_MENU_SEQ":"0","MENU_CD":"M090000000000","MENU_NAME":"人事管理","RESX_CODE":"LBL93016","USE_YN":"Y","SORT":"5","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=748","MENU_TYPE":"9","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"749","SUB_MENU_CD":"M090100000000","BODY_URL":"/ECMAIN/EPY/EPY001M.aspx","IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"7","PARENT_MENU_SEQ":"0","MENU_CD":"M070000000000","MENU_NAME":"行政管理","RESX_CODE":"LBL93014","USE_YN":"Y","SORT":"6","SORT2":null,"MENU_URL":"ecp050m.aspx?menu_type=7","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":"2","USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":"39","SUB_MENU_CD":"M070200000000","BODY_URL":"/ECERP/EGD/EGD003M","IS_MAIN":null,"CHECKED":false}],"SubMenuData":{"Data":[{"MENU_SEQ":"9","PARENT_MENU_SEQ":"1","MENU_CD":"M010100000000","MENU_NAME":"基本資料","RESX_CODE":"LBL93290","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010100000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"10","PARENT_MENU_SEQ":"1","MENU_CD":"M010200000000","MENU_NAME":"快速輸入","RESX_CODE":"LBL93040","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010200000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"11","PARENT_MENU_SEQ":"1","MENU_CD":"M010300000000","MENU_NAME":"應收應付交易","RESX_CODE":"LBL93045","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010300000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"12","PARENT_MENU_SEQ":"1","MENU_CD":"M010400000000","MENU_NAME":"收款付款交易","RESX_CODE":"LBL93051","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010400000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"13","PARENT_MENU_SEQ":"1","MENU_CD":"M010500000000","MENU_NAME":"非現金科目交易","RESX_CODE":"LBL93067","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010500000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"14","PARENT_MENU_SEQ":"1","MENU_CD":"M010600000000","MENU_NAME":"支票交易","RESX_CODE":"LBL93073","USE_YN":"Y","SORT":"6","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010600000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"15","PARENT_MENU_SEQ":"1","MENU_CD":"M010700000000","MENU_NAME":"固定資產","RESX_CODE":"LBL93079","USE_YN":"Y","SORT":"7","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010700000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"16","PARENT_MENU_SEQ":"1","MENU_CD":"M010800000000","MENU_NAME":"憑證管理","RESX_CODE":"LBL93090","USE_YN":"Y","SORT":"8","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010800000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"17","PARENT_MENU_SEQ":"1","MENU_CD":"M010900000000","MENU_NAME":"報表","RESX_CODE":"LBL93109","USE_YN":"Y","SORT":"9","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=1&sub_menu=M010900000000","MENU_TYPE":"1","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"23","PARENT_MENU_SEQ":"2","MENU_CD":"M020600000000","MENU_NAME":"出勤管理","RESX_CODE":"LBL93196","USE_YN":"Y","SORT":"6","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=2&sub_menu=M020600000000","MENU_TYPE":"2","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"24","PARENT_MENU_SEQ":"3","MENU_CD":"M030100000000","MENU_NAME":"預扣徵收","RESX_CODE":"LBL93205","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=3&sub_menu=M030100000000","MENU_TYPE":"3","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"25","PARENT_MENU_SEQ":"3","MENU_CD":"M030200000000","MENU_NAME":"其他預扣稅","RESX_CODE":"LBL93220","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=3&sub_menu=M030200000000","MENU_TYPE":"3","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"26","PARENT_MENU_SEQ":"3","MENU_CD":"M030300000000","MENU_NAME":"營業稅","RESX_CODE":"LBL93230","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=3&sub_menu=M030300000000","MENU_TYPE":"3","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"27","PARENT_MENU_SEQ":"3","MENU_CD":"M030400000000","MENU_NAME":"法人稅","RESX_CODE":"LBL93279","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=3&sub_menu=M030400000000","MENU_TYPE":"3","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"28","PARENT_MENU_SEQ":"3","MENU_CD":"M030500000000","MENU_NAME":"電子申報","RESX_CODE":"LBL93282","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=3&sub_menu=M030500000000","MENU_TYPE":"3","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"29","PARENT_MENU_SEQ":"4","MENU_CD":"M040100000000","MENU_NAME":"基本資料","RESX_CODE":"LBL93290","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040100000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"31","PARENT_MENU_SEQ":"4","MENU_CD":"M040300000000","MENU_NAME":"採購管理","RESX_CODE":"LBL93319","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040300000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"30","PARENT_MENU_SEQ":"4","MENU_CD":"M040200000000","MENU_NAME":"銷售管理","RESX_CODE":"LBL93308","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040200000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"32","PARENT_MENU_SEQ":"4","MENU_CD":"M040400000000","MENU_NAME":"生產/外包","RESX_CODE":"LBL93333","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040400000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"33","PARENT_MENU_SEQ":"4","MENU_CD":"M040500000000","MENU_NAME":"庫存管理","RESX_CODE":"LBL93355","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040500000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"35","PARENT_MENU_SEQ":"4","MENU_CD":"M040700000000","MENU_NAME":"報表","RESX_CODE":"LBL93392","USE_YN":"Y","SORT":"6","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=4&sub_menu=M040700000000","MENU_TYPE":"4","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"684","PARENT_MENU_SEQ":"5","MENU_CD":"M050400000000","MENU_NAME":"應收管理","RESX_CODE":"LBL93648","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=5&sub_menu=M050400000000","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"689","PARENT_MENU_SEQ":"5","MENU_CD":"M050500000000","MENU_NAME":"應付管理","RESX_CODE":"LBL93652","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=5&sub_menu=M050500000000","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"21","PARENT_MENU_SEQ":"5","MENU_CD":"M020400000000","MENU_NAME":"預算管理","RESX_CODE":"LBL93188","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=2&sub_menu=M020400000000","MENU_TYPE":"2","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"37","PARENT_MENU_SEQ":"5","MENU_CD":"M050200000000","MENU_NAME":"進口費用","RESX_CODE":"LBL93429","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=5&sub_menu=M050200000000","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1500","PARENT_MENU_SEQ":"5","MENU_CD":"M050800000000","MENU_NAME":"差旅管理","RESX_CODE":"LBL90047","USE_YN":"Y","SORT":"8","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=5&sub_menu=M050800000000","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1702","PARENT_MENU_SEQ":"5","MENU_CD":"M051000000000","MENU_NAME":"轉帳要求管理","RESX_CODE":"LBL11677","USE_YN":"Y","SORT":"10","SORT2":"0","MENU_URL":"/ECERP/EBQ/EBQ001M","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1665","PARENT_MENU_SEQ":"5","MENU_CD":"M050900000000","MENU_NAME":"合約管理","RESX_CODE":"LBL90099","USE_YN":"Y","SORT":"11","SORT2":"0","MENU_URL":"/ECERP/EBP/EBP001M","MENU_TYPE":"5","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"38","PARENT_MENU_SEQ":"7","MENU_CD":"M070100000000","MENU_NAME":"資訊共享區","RESX_CODE":"LBL93020","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070100000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"39","PARENT_MENU_SEQ":"7","MENU_CD":"M070200000000","MENU_NAME":"電子簽核","RESX_CODE":"LBL93528","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070200000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"40","PARENT_MENU_SEQ":"7","MENU_CD":"M070300000000","MENU_NAME":"業務管理","RESX_CODE":"LBL93522","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070300000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"43","PARENT_MENU_SEQ":"7","MENU_CD":"M070600000000","MENU_NAME":"DIY共用記事板","RESX_CODE":"LBL93637","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070600000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"42","PARENT_MENU_SEQ":"7","MENU_CD":"M070500000000","MENU_NAME":"客戶管理","RESX_CODE":"LBL93509","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070500000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"44","PARENT_MENU_SEQ":"7","MENU_CD":"M070700000000","MENU_NAME":"專案管理","RESX_CODE":"LBL93664","USE_YN":"Y","SORT":"6","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=7&sub_menu=M070700000000","MENU_TYPE":"7","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1600","PARENT_MENU_SEQ":"8","MENU_CD":"M080100000000","MENU_NAME":"資訊管理","RESX_CODE":"LBL90064","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=8&sub_menu=M080100000000","MENU_TYPE":"8","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"275","PARENT_MENU_SEQ":"8","MENU_CD":"M080200000000","MENU_NAME":"用户管理","RESX_CODE":"LBL93545","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=8&sub_menu=M080200000000","MENU_TYPE":"8","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1601","PARENT_MENU_SEQ":"8","MENU_CD":"M080300000000","MENU_NAME":"自主設定","RESX_CODE":"LBL90065","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=8&sub_menu=M080300000000","MENU_TYPE":"8","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"276","PARENT_MENU_SEQ":"8","MENU_CD":"M080400000000","MENU_NAME":"其他管理","RESX_CODE":"LBL12979","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=8&sub_menu=M080400000000","MENU_TYPE":"8","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1602","PARENT_MENU_SEQ":"8","MENU_CD":"M080500000000","MENU_NAME":"Excel外掛下載","RESX_CODE":"LBL90066","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=8&sub_menu=M080500000000","MENU_TYPE":"8","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"749","PARENT_MENU_SEQ":"748","MENU_CD":"M090100000000","MENU_NAME":"薪資管理","RESX_CODE":"LBL93229","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=748&sub_menu=M090100000000","MENU_TYPE":"9","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"750","PARENT_MENU_SEQ":"748","MENU_CD":"M090200000000","MENU_NAME":"出勤管理","RESX_CODE":"LBL93196","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=748&sub_menu=M090200000000","MENU_TYPE":"9","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"206","PARENT_MENU_SEQ":"783","MENU_CD":"M100100000000","MENU_NAME":"售後管理","RESX_CODE":"LBL93380","USE_YN":"Y","SORT":"1","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100100000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"208","PARENT_MENU_SEQ":"783","MENU_CD":"M100200000000","MENU_NAME":"序號/批號","RESX_CODE":"LBL93387","USE_YN":"Y","SORT":"2","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100200000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"209","PARENT_MENU_SEQ":"783","MENU_CD":"M100300000000","MENU_NAME":"品質管制","RESX_CODE":"LBL93584","USE_YN":"Y","SORT":"3","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100300000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"210","PARENT_MENU_SEQ":"783","MENU_CD":"M100400000000","MENU_NAME":"計畫管理","RESX_CODE":"LBL90038","USE_YN":"Y","SORT":"4","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100400000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"36","PARENT_MENU_SEQ":"783","MENU_CD":"M100500000000","MENU_NAME":"利潤管理","RESX_CODE":"LBL93421","USE_YN":"Y","SORT":"5","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100500000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1390","PARENT_MENU_SEQ":"783","MENU_CD":"M100600000000","MENU_NAME":"訂單管理","RESX_CODE":"LBL90004","USE_YN":"Y","SORT":"6","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100600000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1395","PARENT_MENU_SEQ":"783","MENU_CD":"M100700000000","MENU_NAME":"出口管理","RESX_CODE":"LBL90010","USE_YN":"Y","SORT":"7","SORT2":"0","MENU_URL":"ecp100m.aspx?menu_type=783&sub_menu=M100700000000","MENU_TYPE":"0","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"1","PARENT_MENU_SEQ":"6","MENU_CD":"1","MENU_NAME":"◈進銷存常用選單","RESX_CODE":"","USE_YN":"Y","SORT":"0","SORT2":"1","MENU_URL":"../ECP/ECP100M.ASPX?MENU_TYPE=6&GROUP_SEQ=1&GROUP_NAME=◈進銷存常用選單","MENU_TYPE":"6","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"6","PARENT_MENU_SEQ":"6","MENU_CD":"6","MENU_NAME":"▣生產模組常用選單","RESX_CODE":"","USE_YN":"Y","SORT":"24","SORT2":"6","MENU_URL":"../ECP/ECP100M.ASPX?MENU_TYPE=6&GROUP_SEQ=6&GROUP_NAME=▣生產模組常用選單","MENU_TYPE":"6","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"16","PARENT_MENU_SEQ":"6","MENU_CD":"16","MENU_NAME":"★應收應付會計常用選單","RESX_CODE":"","USE_YN":"Y","SORT":"54","SORT2":"16","MENU_URL":"../ECP/ECP100M.ASPX?MENU_TYPE=6&GROUP_SEQ=16&GROUP_NAME=★應收應付會計常用選單","MENU_TYPE":"6","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"27","PARENT_MENU_SEQ":"6","MENU_CD":"27","MENU_NAME":"▲人事流程操作","RESX_CODE":"","USE_YN":"Y","SORT":"79","SORT2":"27","MENU_URL":"../ECP/ECP100M.ASPX?MENU_TYPE=6&GROUP_SEQ=27&GROUP_NAME=▲人事流程操作","MENU_TYPE":"6","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false},{"MENU_SEQ":"32","PARENT_MENU_SEQ":"6","MENU_CD":"32","MENU_NAME":"○專案/工程常用選單","RESX_CODE":"","USE_YN":"Y","SORT":"101","SORT2":"32","MENU_URL":"../ECP/ECP100M.ASPX?MENU_TYPE=6&GROUP_SEQ=32&GROUP_NAME=○專案/工程常用選單","MENU_TYPE":"6","GW_USE":"0","MAX_USERS":"10","FLAG":null,"USE_STATUS":"2","FREE_EXPIRE_DATE":"","FREE_USED_YN":"N","SUB_MENU_SEQ":null,"SUB_MENU_CD":null,"BODY_URL":null,"IS_MAIN":null,"CHECKED":false}],"Status":"200","Error":null,"Timestamp":null,"RequestKey":null,"IsEnableNoL4":false}},"Status":"200","Error":null,"Timestamp":null,"RequestKey":null,"IsEnableNoL4":false},"functionInfoJson":{"Data":{"UserType":"W","LimitPage":"N","UserNo":"103","AccSite":"ECOUNT","UserFlag":"C","MultiComCode":"G8021","LastLogin":"2018-06-01T15:48:15.97","MailCount":0,"MailList":[]},"Status":"200","Error":null,"Timestamp":null,"RequestKey":null,"IsEnableNoL4":false},"favJson":{"Data":{"Data":[{"SEQ":1,"FAV_NAME":"報價單 TEST","SORT_SEQ":1,"MENU_SEQ":486,"PROGRAM_SEQ":1194,"SCR_ID":"E040201","LEFT_MENU_SEQ":30,"LEFT_MENU_CD":"M040200000000","TOP_MENU_SEQ":4,"MENU_URL":"/ECERP/ESD/ESD001M","RESX_CODE":"LBL93310","RESX_NAME":"報價單","HELP_URL":"","MENU_TYPE":"L","SPREAD_YN":"X","LARGE_MENU_TYPE":"4","USE_YN":"Y","DEFAULT_MENU_SEQ":0,"POPUP_XPIXEL":0,"POPUP_YPIXEL":0,"OLDMENU_YN":"N"}],"onlyMypage":"N"},"Status":"200","Error":null,"Timestamp":null,"RequestKey":null,"IsEnableNoL4":false},"zone":"B","symbolPath":"","ITEM_SUM":"N","messengerConnectDomain":"ensb1.ecounterp.com","testCodeYn":"Y"},"WidgetDatas":{},"Resource":{},"CookieKey":"65636f756e746d61696e5f47383032315f4755455354","DefaultOption":{"error_msg":null,"hidManageLink":null,"hidBodyUrl":null,"w_flag":"1","sessionKey":"wO0wctIknDp/kcDH97vSpbQGyvg4ZtRZdEweHipaKt+JHyFu7nyvOiA73QJdyJm5DSHVa+crH9TlyH9DXvIXBz+Vasb+XZYFb9a7IBgsRCQ72cbxMNnqthyFaC/c9ZtM","nation_edit_flag":null,"allLevel3Level4List":null,"MENU_USER_CLOSED_YN":"N","TUTORIAL_YN":"N","dsUserData":"G8021|GUEST|億看有限公司|林至伶|test@gmail.com|0928384733|02-86600135|zh-TW","__ecPageID":null,"alreadyIncludedLayout":null,"parentPageID":null,"popupID":null,"popupLevel":null,"__ecOpenPopup":null,"responseID":null,"ecRepositoryID":null,"rowKey":null,"gridID":null}}, {
+            LocalTime: "2018-06-03 23:12:34",
+            COM_CODE: "G8021",
+            ECSTATUS: "g8021",
+            ECP050FAV_JS: "/ECERP/Contents/optimized/ECP050FAV.js?v=-7576543173637771980-19",
+            ECP050FN_JS: "/ECERP/Contents/optimized/ECP050FN.js?v=2132146112879711979-19",
+            NotificationConnect_JS:"/ECERP/Contents/optimized/NotificationConnect.js?v=3044185305968919364-19",
+            ECP050NOTI_JS: "/ECERP/Contents/optimized/ECP050NOTI.js?v=-1598495555074431378-19",
+            ERP_APP : "",
+            ToggleNav : "",
+            Resource: {
+                MSG05144: "服務已過期。\n\n是否續費？",
+                MSG05145: "試用版已過期。\n\n請聯繫管理員。",
+                MSG05146: "超過群組使用空間。\n不能再使用附加檔。\n請續加群組使用人數/空間。",
+
+                //written by grapia
+                LBL93000: "新視窗",
+                LBL93024: "簡訊",
+                LBL93001: "雲端便利貼",
+                LBL93002: "Email",
+                LBL93003: "短訊",
+                LBL93004: "遠端服務",
+                LBL93006: "FAQ常見問答",
+                LBL93445: "管理員",
+                LBL93005: "系統設定",
+                LBL00190: "綜合說明",
+                LBL09007: "錄影諮詢",
+                LBL93012: "登出",
+                LBL04908: "客戶中心",
+                LBL09717: "可搜尋任意內容！（品項，客戶/供應商，說明，Q&A)",
+                MSG00751: "不是電子郵件使用者。<br><br>請諮詢管理員。",
+                MSG04258: "準備中。",
+                MSG03542: "使用IMAP技術的Ecount線上郵件服務\n韓國國內最大容量，最低價格(10名5000韓元，提供20GB容量)\n\n此郵件是限制接收及發送的Guest專用郵件。\n客戶中心 > 附加服務中可以申請線上郵件。",
+                MSG00752: "MSG00752",
+                MSG00670: "請輸入需要查詢的文字。",
+                LBL02904: "下班",
+                LBL03306: "發生錯誤",
+                LBL09548: "修改名字",
+                LBL09549: "刪除標籤",
+                MSG00299: "是否刪除？",
+                LBL09557: "下班",
+                LBL09633: "留言板諮詢",
+                LBL09634: "錄影諮詢",
+                LBL09635: "確認費用",
+                LBL05192: "附加服務",
+                LBL93005: "系統設定",
+                LBL10165: "Messenger",  //메신저
+                LBL08162: "通知",
+                LBL00578: "置頂",
+                LBL06976: "說明",
+                LBL10413: "投票",
+                MSG05720: "延期完成後，將不再顯示。",
+                MSG05721: "投票完成後，將不再顯示。",
+                LBL01932: "今日不再查看",
+                LBL01039: "不再查看",
+                LBL10414: "無消息通知。",
+
+                LBL10710: "線上諮詢",
+                LBL07172: "資料所有者",//자료권리자
+
+
+
+                //Mail Alert
+                MSG05207: "Ecount企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需5美元,提供20GB容量)\n\n如需使用請聯繫。(+1-714-408-4445)",
+                MSG05208: "ECOUNT企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需25元,提供20GB容量)\n\n如需使用請聯繫。(400-876-8200)",
+                MSG05209: "Ecount企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需7美元,提供20GB容量)\n\n如需使用請聯繫。(+65-3158-6189)",
+                MSG05210: "Ecount企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需RM20,提供20GB容量)\n\n如需使用請聯繫.(03-2181-1583)",
+                MSG05211: "Ecount企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需100，000盾,提供20GB容量)\n\n如需使用請聯繫。(028-3930-0812)",
+                MSG05212: "Ecount企業郵箱採用IMAP技術\n價格標準(每10個郵箱只需500日元,提供20GB容量)\n\n如需使用諮詢客戶中心。",
+                MSG05213: "Ecount企業郵箱採用IMAP技術\n\n如需使用請聯繫。(+62859-6646-6704)",
+
+                MSG05584: "收到新消息。",   //새로운메시지가 도착했습니다.
+                MSG05609: "正在連接伺服器…請稍後再試一次。",   //서버 연결 중입니다. 잠시 후 다시 시도 바랍니다.
+                LBL01635: "查詢選單",   //메뉴검색
+                MSG05761: "該功能表名可能無法使用或不存在。" ,   //사용 불가능하거나 존재하지 않는 메뉴명입니다
+
+                LBL09995: "瀏覽器優化",
+
+                //multi login messages
+                MSG12018: "[限制訪問允許]已設定為訪問限制。<br>請諮詢公司管理員。",
+                MSG12019: "[個人_訪問限制時間設定]{0}~{1}不能登入。<br />請諮詢公司管理員。",
+                MSG12020: "[公司_訪問限制時間設定]{0}~{1}不能登入。<br />請諮詢公司管理員。",
+                MSG12021: "[個人_允許IP設定]相關PC不能登入。<br />請諮詢公司管理員。",
+                MSG12022: "[公司_個人IP設定]相關PC不能登入。<br />請諮詢公司管理員。",
+                MSG00256: "MSG00256",
+                MSG12023: "選擇的公司已解除合約。",
+                MSG12024: "選擇的公司由於未支付使用費，被停止使用。<br>確認未付款付款後可使用。",
+                MSG12025: "[編碼凍結]使用已被停止。<br>請諮詢公司管理員。",
+                MSG02325: "密碼已經5次以上輸入錯誤。\n向管理員要求更改密碼，\n管理員的情況要求在申密碼後\n登入。",
+                MSG12026: "確認公司編碼與用戶名後登入。<br/>請諮詢公司管理員。",
+                MSG12027: "為使用多重登入的公司編碼。<br/>請諮詢公司管理員。",
+                MSG12028: "為使用多重登入的公司編碼。<br/>請諮詢公司管理員。",
+                MSG12029: "相關使用者的密碼已過期。<br>登入公司使用者後請更改密碼。",
+                MSG00399: "從[{0}]移動到[{1}]。\n\n請先關閉此公司編碼中所有開啟視窗後，再到其他公司編碼中輸入。不然的話，在此公司編碼輸入的內容可能會儲存到其他公司編碼中。\n\n要移動嗎？",
+                LBL09826: "個人設定",
+
+            LBL13662: "隱藏選單",
+            LBL13663: "展開選單",
+            LBL13664: "編輯選單",
+            LBL13140: "下班/登出",
+            MSG08079: "進行導覽時，會暫時轉為選單展開模式。<br/>轉為選單展開模式後，輸入畫面中輸入的內容將不會被儲存。<br/><br/>是否要進行導覽？"
+            
+            }
+        });
+        // 메신저 com_code 못찾는 현상때문에 추가했으니 삭제하지 마세요.
+        ecount.company.COM_CODE = "G8021";
+
+        // 튜토리얼 전체 언어 오픈 전까지만 사용될 함수입니다.
+        getTutorialIcon();
+
+        var MessengerPop; //퇴근체크시 사용됨.
+
+        //즐겨찾기 설정 부분에서 호출 : EMW004M.aspx.cs
+        function SetReloadFavorite(useyn, spreadyn, typeval) {
+            useyn = useyn == null ? "N" : useyn;
+            spreadyn = spreadyn == null ? "N" : spreadyn;
+            typeval = typeval == null ? "N" : typeval;
+            if (configInfoJson.FAV_YN != useyn)
+                configInfoJson.FAV_YN = useyn;
+            if (configInfoJson.FAV_SPREAD_YN != spreadyn)
+                configInfoJson.FAV_SPREAD_YN = spreadyn;
+            if (configInfoJson.FAV_OPEN_TYPE != typeval)
+                configInfoJson.FAV_OPEN_TYPE = typeval;
+
+            ecount.global.findPageInstance("ecp.ecp050fav").setReload();
+        }
+
+        //각페이지에서 즐겨찾기 추가/삭제시 호출 : CM400P_01.aspx & ECount.Common.js
+        function SetReload() {
+            ecount.global.findPageInstance("ecp.ecp050fav").setReload();
+        }
+
+        //SetReload override 가능성 때문에 생성 구프레임웍 삭제후 삭제예정
+        function SetFavoriteReload() {
+            ecount.global.findPageInstance("ecp.ecp050fav").setReload();
+        }
+
+
+        //투표팝업에서 호출 : EGM034M.aspx
+        function SetNoticeReload(){
+            ecount.global.findPageInstance("ecp.ecp050fn").getNotificationData();
+        }
+
+        function showBookmark(){
+            $(".global-nav").removeClass('open');
+            $(".qm-ecount-search").removeClass('open');
+            $(".qm-btn-customer-center").removeClass('open');
+            $(".qm-icon").removeClass('open');
+            $(".wrapper-bookmark-bar").toggleClass('open');
+        }
+
+        function showFunction(){
+            $(".global-nav").removeClass('open');
+            $(".wrapper-bookmark-bar").removeClass("open");
+            $(".qm-ecount-search").toggleClass('open');
+            $(".qm-btn-customer-center").toggleClass('open');
+            $(".qm-icon").toggleClass('open');
+        }
+
+        function toggleResponsiveType(obj) {
+            $(obj).toggleClass("qm-icon-responsive-type-a qm-icon-responsive-type-b");
+            var isResponsive = $(obj).hasClass("qm-icon-responsive-type-b");
+            var gridList = window.gridRegistered;
+
+            ecount.user.RESPONSIVE_TYPE_TEMP = isResponsive ? "W" : "L";
+
+            for(var gridName in gridList) {
+                if (gridList.hasOwnProperty(gridName)) {
+                    gridList[gridName].setTableActiveResponsive(isResponsive);
+                }
+            }
+        }
+
+        function resetResponsiveType(type) {
+
+            if (ecount.config.user.RESPONSIVE_YN == "N")
+                return false;
+
+            var originalType = "qm-icon-responsive-type-a";
+
+            if ($(".qm-responsive-icon > a." + originalType).length == 1)
+                return false;
+
+            ecount.user.RESPONSIVE_TYPE_TEMP = "L";
+            $(".qm-responsive-icon > a[class*='qm-icon-responsive-type-']").toggleClass("qm-icon-responsive-type-a qm-icon-responsive-type-b");
+             
+
+        }
+
+        function hideSitemap() {
+            $(".wrapper-sitemap").removeClass("hidden").removeClass("visible");
+        }
+
+        function getTutorialIcon() {
+            var icon = $('<li id="ectutorial" class="qm-icon-tutorial" data-toggle="tooltip" data-placement="left" data-original-title="Tutorial"></li>');
+
+            // 사용자의 언어설정에 따라 아이콘 표시하지 않음.
+            if (["zh-CN", "en-US", "ko-KR"].contains(ecount.user.LAN_TYPE)) {
+                if (ecount.config.user.RESPONSIVE_YN == "Y" && 
+                    ($("#responsive-applied").is(":visible") || $("iframe#mainbody").contents().find("div#responsive-applied").is(":visible"))) {
+                    icon.css("display","none");
+                }
+                $("#ecMenuFunction").prepend(icon);
+            }
+
+            //반응형 웹 responsive web media 변경이 일어나면 아이콘 감춤
+            $(window).resize(function() {
+                if (ecount.config.user.RESPONSIVE_YN == "Y" && 
+                    ($("#responsive-applied").is(":visible") || $("iframe#mainbody").contents().find("div#responsive-applied").is(":visible"))) {
+                    $("#ecMenuFunction > li#ectutorial").hide();
+                } else {
+                    $("#ecMenuFunction > li#ectutorial").show();
+                }
+            });
+        }
+
+    </script>
+    <script src="/ECERP/Contents/optimized/ECP050M.js?v=8666858920874327549-19" type="text/javascript"></script>
+
+
+    <script language="javascript">
+        
+        
+
+        // Shorthand for $(document).ready()
+        $(function () {
+            var iosMobile = (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase())),
+                layoutURL = window.location.href;
+
+            if (iosMobile) {
+                if (layoutURL.indexOf("/ECERP/ECP/ECP050M") >= 0 || layoutURL.indexOf("/ECERP/CSA/CSA011M") >= 0 || layoutURL.indexOf("/ECERP/UPA/UPA001M") >= 0) {
+                    $("#body_html").attr("class", "welcome using-ios page-fluid-vertical navigation-type1 erp using-bookmark font-user-setting zoom-90 responsive-web");
+                } else {
+                    $("#body_html").attr("class", "using-ios font-user-setting zoom-90 responsive-web");
+                }
+            } else {
+                if (layoutURL.indexOf("/ECERP/ECP/ECP050M") >= 0 || layoutURL.indexOf("/ECERP/CSA/CSA011M") >= 0 || layoutURL.indexOf("/ECERP/UPA/UPA001M") >= 0) {
+                    $("#body_html").attr("class", "welcome page-fluid-vertical navigation-type1 erp using-bookmark font-user-setting zoom-90 responsive-web");
+                } else {
+                    $("#body_html").attr("class", "font-user-setting zoom-90 responsive-web");
+                }
+            }
+
+        });
+    </script>
+
+</body>
+</html>
+

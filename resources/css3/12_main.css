@@ -1,0 +1,16 @@
+
+#box{
+	font:bold 40px Tahoma;	
+	text-align:center;
+	margin:50px;
+	/*border:1px solid green;*/
+	width:250px;
+	height:150px;
+	line-height:150px;	
+	border-radius:10px;
+	
+	/*background:yellow;*/
+	/*background-image:-webkit-radial-gradient(center,circle,red,green);*/
+	background-image:-webkit-repeating-radial-gradient(center,ellipse,red 10%,blue 20%);
+	color:#fff;
+}

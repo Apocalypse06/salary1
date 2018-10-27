@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人事系統</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        .box {
+            height: 100px;
+            background-color: blue;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .box-auto {
+            border: 1px solid blue;
+            background-color: #7952b3;
+            color: white;
+        }
+
+        .grid-3 {
+            background-color: blue;
+            color: white;
+        }
+
+        .grid-4 {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        .grid-5 {
+            min-height: 100vh;
+
+            border: 1px sold;
+
+        }
+
+        .grid-6 {
+            background-color: blanchedalmond;
+            color: black;
+        }
+
+        ul {
+            z-index: 100;
+            list-style-type: none;
+            background: #009FCC;
+            color: #bab2c7;
+        }
+
+
+
+        @media (min-width: 768px) {
+            .sidebar {
+                z-index: 1;
+                position: absolute;
+                width: 250px;
+                left: 10%;
+                margin-top: 51px;
+            }
+        }
+
+        .main-menu {
+            font-size: 100%;
+            margin-left: 5px;
+            float: left;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-3 navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                        alt=""> 全 新
+                </a>
+            </nav>
+
+            <nav class="col-9 navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="/Index.htm">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-item nav-link" href="#">管理中心</a>
+                        <a class="nav-item nav-link" href="#">出勤系統</a>
+                        <a class="nav-item nav-link" href="#">薪資系統</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row ">
+
+            <ul class=" col-2 grid-5  d-flex 
+ justify-content-start align-items-center align-content-around border-right border-primary navbar  ">
+                <div class="text-center">
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
+        aria-controls="multiCollapseExample1 multiCollapseExample2">基 本 資 料
+    </button>
+</p>
+<div>
+    <li class="py-3 collapse multi-collapse" id="multiCollapseExample1">
+        <a class="text-white  " href="employee.htm">員 工</a>
+    </li>
+    <li class="py-3 collapse multi-collapse" id="multiCollapseExample2">
+        <a class="text-white " href="">部 門 </a>
+    </li>
+</div>
+<p>
+    <button class="btn btn-primary " type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false"
+        aria-controls="multiCollapseExample3 multiCollapseExample4 multiCollapseExample5">薪
+        資 資 料
+    </button>
+</p>
+<div>
+    <li class="py-3 collapse multi-collapse2">
+        <a class="text-white " id="collapseExample3" href="">員 工 薪 資</a>
+    </li>
+    <li class="py-3 collapse multi-collapse2">
+        <a class="text-white" id="collapseExample4" href="">津貼 / 扣除 </a>
+    </li>
+    <li class="py-3 collapse multi-collapse2">
+        <a class="text-white " id="collapseExample5" href="">報 表</a>
+    </li>
+</div>
+</ul>
+                </div>
+                   
+        </div>
+            <div class="col-10 ">content</div>
+        </div>
+
+    
+    <div class="row">
+
+    </div>
+    <div class="row">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

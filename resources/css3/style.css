@@ -1,0 +1,24 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+        url(/resources/images/indexphoto.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.font{
+    color: #fff;
+    font-size: 30pt;
+        
+}
+.chack{
+    color:#fff;
+    font-size: 15pt;
+    float: right;
+}
+.check{
+    zoom:2;
+}
+.flex{
+     flex-direction: row ;
+}
